@@ -15,30 +15,39 @@
 </head>
 
 <body>
-    <nav>
-        <ul class="nav bg-body fixed-top">
-            <div class="nav-body">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#service">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#project">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#growth">Growth</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#feedback">Feedback</a>
-                </li>
+    <nav class="navbar navbar-expand-lg bg-body fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bolder fs-2 ms-5" href="#">Fyle</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="nav-body">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#growth">Growth</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#feedback">Feedback</a>
+                        </li>
+                    </div>
+                </ul>
             </div>
-        </ul>
+        </div>
     </nav>
 
-    <main>
-
+    <main class="mt-5 pt-5">
         <!-- main container  -->
         <div class="container">
             <div class="row">
@@ -54,7 +63,7 @@
                         <button class="#" data-bs-toggle="modal" data-bs-target="#exampleModal">CONTACT US</button>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-start mt-5">
+                <div class="col-6 justify-content-center mt-5">
                     <img src="./assets/'contact us' button.png" alt="Contact Us Button" class="img-thumbnail">
                 </div>
             </div>
@@ -71,23 +80,25 @@
                     <div class="modal-body">
                         <form action="https://getform.io/f/zbzkjeea" method="POST">
                             <div class="form-floating mb-3">
-                                <input type="email" name="mail" value="" class="form-control" id="email" placeholder="work email" required>
+                                <input type="email" name="mail" value="" class="form-control" id="email"
+                                    placeholder="work email" required>
                                 <label for="email">Work email*</label>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 form-floating mb-3">
-                                    <input name="frist" value="" type="text" class="form-control" id="firstName" placeholder="First name"
-                                        required>
+                                    <input name="frist" value="" type="text" class="form-control" id="firstName"
+                                        placeholder="First name" required>
                                     <label for="firstName">First name*</label>
                                 </div>
                                 <div class="col-md-6 form-floating mb-3">
-                                    <input name="last" value="" type="text" class="form-control" id="lastName" placeholder="Last name"
-                                        required>
+                                    <input name="last" value="" type="text" class="form-control" id="lastName"
+                                        placeholder="Last name" required>
                                     <label for="lastName">Last name*</label>
                                 </div>
                             </div>
                             <div class="form-check mb-3">
-                                <input name="check" value=""  class="form-check-input" type="checkbox" id="terms" required>
+                                <input name="check" value="" class="form-check-input" type="checkbox" id="terms"
+                                    required>
                                 <label class="form-check-label" for="terms">
                                     I agree to the terms and conditions of <br>
                                     Wishing you a day filled with joy, <br>
@@ -248,10 +259,10 @@
                 <h2>WHY WE ARE BEST</h2>
             </div>
             <div class="row">
-                <div class="col-9 m-auto">
+                <div class="col-7 m-auto">
                     <img class="imageChange" id="imageChange" src="./assets/img1.jfif" alt="">
                 </div>
-                <div class="col-3 m-auto">
+                <div class="col-5 m-auto">
                     <div class="container" id="card-cotainer">
                         <div class="card cards" id="card1" onclick="changeImage('./assets/img1.jfif')">
                             <div class="card-body">
